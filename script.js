@@ -18,6 +18,6 @@ saveButton.addEventListener('click', () => {
         backgroundColor: backgroundColorInput.value,
         textColor: textColorInput.value
     };
-    console.log('Theme gespeichert:', theme);
-    alert('Theme wurde gespeichert!');
+    console.log('Theme saved:', theme);
+    alert('Theme has been saved!');
 });
