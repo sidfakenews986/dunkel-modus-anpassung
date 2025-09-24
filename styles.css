@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+#preview-area {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ffffff;
+    margin-top: 10px;
+}
+
+#theme-settings {
+    margin-top: 20px;
+}
+
+input[type=color] {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #121212;
+    border: none;
+    padding: 10px;
+}
