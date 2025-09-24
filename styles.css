@@ -26,8 +26,8 @@ input[type=color] {
 
 button {
     margin-top: 10px;
-    background-color: #ffffff;
-    color: #121212;
+    background-color: #007BFF; /* Updated to a blue shade for better contrast */
+    color: #ffffff;
     border: none;
     padding: 10px;
 }
