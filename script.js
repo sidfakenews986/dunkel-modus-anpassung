@@ -6,6 +6,8 @@ const saveButton = document.getElementById('save-theme');
 backgroundColorInput.addEventListener('input', updatePreview);
 textColorInput.addEventListener('input', updatePreview);
 
+let isThemeSaved = false;
+
 function updatePreview() {
     const backgroundColor = backgroundColorInput.value;
     const textColor = textColorInput.value;
@@ -14,10 +16,15 @@ function updatePreview() {
 }
 
 saveButton.addEventListener('click', () => {
-    const theme = {
-        backgroundColor: backgroundColorInput.value,
-        textColor: textColorInput.value
-    };
-    console.log('Theme saved:', theme);
-    alert('Theme has been saved!');
+    if (!isThemeSaved) {
+        const theme = {
+            backgroundColor: backgroundColorInput.value,
+            textColor: textColorInput.value
+        }; 
+        console.log('Theme saved:', theme);
+        alert('Theme has been saved!');
+        isThemeSaved = true;
+    } else {
+        alert('Theme has already been saved!');
+    }
 });
